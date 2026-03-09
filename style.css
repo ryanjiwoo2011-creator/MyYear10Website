@@ -39,7 +39,7 @@ img {
     color: rgb(0, 0, 0);
     font-size: 2em;
     padding: 0.1em 3em;
-    background-color: rgb(123, 73, 133);
+    background-color: rgb(191, 98, 209);
 }
 
 /* Three column grid with a nice big gap */
@@ -55,7 +55,7 @@ img {
 
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
 .topic-card{
-    background-color: rgb(175, 67, 202);
+    background-color: rgb(191, 98, 209);
     color: rgb(0, 0, 0);
     padding: 1em;
     border-radius: 0.5em;
@@ -73,7 +73,7 @@ img {
 
 /* Styling for a footer section to take a bit of spcae at the bottom of the page */
 .footer{
-    background-color: rgb(252, 126, 203);
+    background-color: rgb(191, 98, 209);
     color: rgb(0, 0, 0);
     text-align: right;
     padding: 3em 3em;
