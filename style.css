@@ -92,6 +92,12 @@ img {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+.topic-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
 /* Styling for the topic card titles */
 .topic-card-text{
     font-size: 1.5em;
