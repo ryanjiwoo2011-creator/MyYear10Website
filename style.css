@@ -114,3 +114,9 @@ img {
     text-align: right;
     padding: 3em 3em;
 }
+
+.uniform-img {
+  width: 350px;      
+  height: 250px;      
+  object-fit: cover;  
+}
