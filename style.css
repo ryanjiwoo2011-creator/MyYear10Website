@@ -1,3 +1,4 @@
+
 /* A simple css reset */
 body,
 html {
@@ -119,4 +120,59 @@ img {
   width: 350px;      
   height: 250px;      
   object-fit: cover;  
+}
+
+/* --- THE CARD HOVER EFFECT --- */
+.topic-card {
+  /* Keeps the card flip/lift animation completely fluid */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* When you hover over a card, it lifts up and drops a smooth shadow */
+.topic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* --- THE SQUARE IMAGE FRAME (Keeps zoom contained) --- */
+.img-container {
+  width: 320px;         /* Increased to 320px to make them fill out the cards nicely */
+  height: 320px;        /* Kept identical to the width to maintain a perfect square */
+  overflow: hidden;     /* Keeps the image from spilling out when it zooms */
+  border-radius: 12px;  /* Slightly round corners to match your cards */
+  margin: 0 auto 10px auto; /* Centers the square and adds space underneath it */
+}
+
+/* --- THE IMAGE & VIDEO STYLING & ANIMATION --- */
+.uniform-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* Crops everything beautifully without distortion */
+  transition: transform 0.5s ease; /* Makes the zoom animation super smooth */
+}
+
+/* When the card is hovered, zoom the image/video inside it slightly */
+.topic-card:hover .uniform-img {
+  transform: scale(1.08); /* Zooms in by 8% */
+}
+
+/* --- THE 100x ULTRA FLAIR CARD (LIGHT BACKGROUND FOR BLACK TEXT) --- */
+.topic-card {
+  position: relative;
+  background: #f3e8ff;                 /* Soft, bright pastel purple background */
+  border: 2px solid #b366cc;           /* Clean theme-purple border */
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Snappy bounce effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Lighter shadow for a clean look */
+}
+
+/* Supercharged Hover Animation */
+.topic-card:hover {
+  transform: translateY(-12px) scale(1.02); /* Lifts higher with a slight pop */
+  background: #ebd5ff;                     /* Subtly deepens the pastel purple on hover */
+  border-color: #f15bb5;                   /* Border flashes into neon pink */
+  box-shadow: 0 20px 40px rgba(179, 102, 204, 0.3), 
+              0 0 25px rgba(241, 91, 181, 0.2); /* Smooth theme glow */
 }
